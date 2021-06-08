@@ -29,7 +29,7 @@ async def banusers(ctx):
                     print("Banning: " + member.name.lower())
                     await member.ban(reason = "Unallowed Username")
 
-        # wait for tatsumaki to write join / leave messages
+        # wait for bots such as tatsumaki to write join / leave messages
         await asyncio.sleep(5)
 
         # purge messages in member log
@@ -77,7 +77,7 @@ async def on_member_join(member):
 
         if banned == True:
 
-            # wait for tatsumaki to write join / leave messages
+            # wait for bots such as tatsumaki to write join / leave messages
             await asyncio.sleep(5)
 
             # purge
